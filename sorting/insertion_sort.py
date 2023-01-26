@@ -1,5 +1,8 @@
+from typing import List, Union
 
-def insertion_sort(A):
+NumberList =  List[Union[int, float]]
+
+def finsertion_sort(A: NumberList) -> NumberList:
     n = len(A)
     for i in range(1, n):
         key = A[i]
@@ -8,4 +11,4 @@ def insertion_sort(A):
             A[j+1] = A[j]
             j = j - 1
         A[j + 1] = key
-    
+    return A
