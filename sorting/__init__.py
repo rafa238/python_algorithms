@@ -1,1 +1,1 @@
-__all__ = ['insertion_sort']
+__all__ = ['insertion_sort', 'merge_sort']
