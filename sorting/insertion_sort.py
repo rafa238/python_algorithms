@@ -1,12 +1,13 @@
 from typing import List, Union
 
-NumberList =  List[Union[int, float]]
+Number = Union[int, float]
+NumberList =  List[Number]
 
 def finsertion_sort(A: NumberList) -> NumberList:
-    n = len(A)
+    n: int = len(A)
     for i in range(1, n):
-        key = A[i]
-        j = i - 1
+        key: Number = A[i]
+        j: int = i - 1
         while j >= 0 and A[j] > key:
             A[j+1] = A[j]
             j = j - 1
